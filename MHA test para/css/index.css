@@ -1,0 +1,359 @@
+/************/
+/** GENERAL */
+/************/
+@font-face {
+    font-family: "Manga";
+    src: url("../Manga.otf");
+    font-weight: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    margin-right: 20px
+}
+
+a:hover {
+    color: rgb(190, 243, 65);
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:992px) {
+    p {
+        font-size: 0.8em;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+li {
+    list-style-type: none;
+}
+
+/************/
+/** NAVBAR */
+/************/
+
+.navbar {
+    width: 100%;
+    height: 8vh;
+    line-height: 8vh;
+    background-color: #535353;
+    font-family: 'Manga';
+    font-size: 1.5em;
+
+}
+
+.navimg {
+    position: right;
+    height: 5vh;
+    line-height: 5vh;
+    width: auto;
+    position: relative;
+    margin-left: 30%;
+    margin-top:
+}
+
+.onglet li {
+    display: inline-flex;
+    color: white;
+    width: 15%;
+}
+
+@media (max-width:992px) {
+    .navbar {
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.4em;
+        position: inline-block;
+    }
+}
+
+
+/**********/
+
+/* PAGE 1 */
+
+/***********/
+
+#slider {
+    overflow: hidden;
+    height: 850px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    85% {
+        left: -300%;
+    }
+
+    95% {
+        left: -400%;
+    }
+}
+
+#slider p {
+    color: whitesmoke;
+    font-size: 2em;
+    width: 200px;
+    background-color: green;
+    margin-right: 50%;
+    margin-top: 10%;
+    top: 60%;
+    left: 40%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Manga';
+}
+
+
+@media (max-width:992px) {
+    #slider {
+        overflow: hidden;
+        height: 300px;
+        width: auto;
+    }
+
+    #slider p {
+        color: whitesmoke;
+        font-size: 2em;
+        width: 200px;
+        background-color: green;
+        margin-right: 50%;
+        margin-top: 10%;
+        top: 20%;
+        left: 40%;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        font-family: 'manga';
+    }
+
+}
+
+
+/**********/
+
+/* PAGE 2 */
+
+/***********/
+.presentation {
+    width: 100%;
+    height: 70vh;
+    margin-top: 100px;
+}
+
+.p2img {
+    width: 50%;
+    float: left;
+    height: auto;
+    background: white;
+}
+
+.p2img img {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 80px;
+}
+
+.p2texte {
+    width: 50%;
+    float: right;
+    height: auto;
+    font-size: 0.7em;
+}
+
+@media (max-width:992px) {
+    .presentation {
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+    }
+
+    .p2img img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
+/**************/
+
+/* PAGE 3 DEBUT*/
+
+/**************/
+
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+/*****************/
+/* MOITIE PAGE 3 */
+/****************/
+
+.ligne1 {
+    height: 50vh;
+    margin-top: 100px;
+}
+
+.photol1 img {
+    max-width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+ul#photol1 {
+    max-width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+
+#photol2 {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+/************/
+/* FOOTER 1 */
+/************/
+
+.footer1 {
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 45vh;
+    max-width: 100%;
+    border-color: aquamarine;
+    border-width: 10px;
+    border-style: solid;
+
+}
+
+.footer1 p {
+    color: white;
+}
+
+.cotegauche {
+    float: left;
+    font-size: 0.6em;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.milieu {
+    text-align: center;
+    font-size: 0.6em;
+    width: 40%;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.cotedroit {
+    float: right;
+    font-size: 0.6em;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+@media (max-width:992px) {
+    .footer1 {
+        background-color: rgba(0, 0, 0, 0.588);
+        height: 300px;
+        max-width: 100%;
+
+    }
+}
+
+/************/
+/* FOOTER 2 */
+/************/
+
+.footer2 {
+    background-color: rgba(0, 0, 0, 0.588);
+    height: 15vh;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 15vh;
+}
+
+.footer2 img {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width:992px) {
+    .footer2 {
+        background-color: rgba(0, 0, 0, 0.588);
+        height: 100px;
+        width: 100%;
+        line-height: 100px;
+
+    }
+}
